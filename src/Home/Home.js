@@ -20,7 +20,7 @@ const Home = ({ blogData }) => {
     <Layout>
       <div className="box">
         <input
-          className="search-box"
+          className="search_box"
           type="search"
           placeholder="Search Breed..."
           value={searchDog}
