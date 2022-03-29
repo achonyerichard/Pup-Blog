@@ -10,7 +10,9 @@ body {
             -moz-background-size: cover;
             -o-background-size: cover;
 }
-
+.nav{
+  margin-bottom: 1rem;
+}
 .code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

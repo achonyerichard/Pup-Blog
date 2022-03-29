@@ -34,7 +34,7 @@ const Nav = () => {
 
   return (
     <>
-      <AppBar position="static" color="primary" elevation={0}>
+      <AppBar className="nav" position="static" color="primary" elevation={0}>
         <Toolbar>
           <Box component="span" className={classes.box}>
             <Typography variant="h6" className={classes.title}>
