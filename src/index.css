@@ -45,6 +45,9 @@ code {
   padding-left: 10px;
   border: 2px solid black;
 }
+.blogcard{
+  margin-bottom: 2rem !important;
+}
 
 .input_label {
   color: white !important;
@@ -59,12 +62,13 @@ code {
   box-shadow: inset 10px 10px 163px 109px rgba(0, 0, 0, 0.71);
 }
 footer{
-  margin-top: 2rem;
+  margin-top: 1rem;
   background-color: black;
   color: white;
-  min-height: 2rem;
+  height: 30px;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   position: absolute;
+  bottom: 1;
   width: 100%;
 }
