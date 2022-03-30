@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
     position: "relative",
-    marginTop: "3rem",
+    marginTop: "2rem",
     backgroundColor: "primary",
   },
   media: {
