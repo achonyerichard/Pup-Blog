@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect } from "react";
+import {useNavigate} from 'react-router-dom'
 import { Container, TextField } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import { Typography } from "@material-ui/core";
@@ -44,6 +45,8 @@ const Blog = ({ blogData, setBlogData }) => {
   const [linkError, setLinkError] = useState(false);
   const [detailsError, setDetailsError] = useState(false);
   const [creatorError, setCreatorError] = useState(false);
+
+  const navigate = useNavigate();
 
   const isFirstRenderRef = React.useRef(true);
   useEffect(() => {
@@ -93,6 +96,7 @@ const Blog = ({ blogData, setBlogData }) => {
       setBlogData((blogDataArr) => [formData, ...blogDataArr]);
 
       clearFormInputs();
+      navigate('/home')
     }
   };
 
