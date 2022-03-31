@@ -1,32 +1,31 @@
-import React, {useState, useEffect } from "react";
-import {useNavigate} from 'react-router-dom'
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { Container, TextField } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import { Typography } from "@material-ui/core";
 import { Button } from "@material-ui/core";
 import Layout from "../Layout";
-
 const useStyles = makeStyles({
   field: {
     marginTop: 20,
     marginBottom: 20,
     display: "block",
-    border: '1px solid white',
-    color: 'secondary',
+    border: "1px solid white",
+    color: "secondary",
   },
   text: {
     marginTop: "2rem",
     margin: "auto",
     alignItems: "center",
     textAlign: "center",
-    color: 'white',
+    color: "white",
   },
   form: {
     maxWidth: "60ch",
     // display: 'flex',
     margin: "auto",
-    color: 'secondary',
-    border: ' 5px white',
+    color: "secondary",
+    border: " 5px white",
   },
   btn: {
     margin: "auto",
@@ -84,7 +83,7 @@ const Blog = ({ blogData, setBlogData }) => {
     if (name && breed && link && details && creator) {
       // console.log(name,breed,link,details,creator);
       const formData = {
-        id: Math.random().toString,
+        id: Date.now().toString(),
         name,
         breed,
         link,
@@ -93,10 +92,10 @@ const Blog = ({ blogData, setBlogData }) => {
       };
       // console.log(formData);
 
-      setBlogData((blogDataArr) => [formData, ...blogDataArr]);
+      setBlogData([formData, ...blogData]);
 
       clearFormInputs();
-      navigate('/home')
+      navigate("/home");
     }
   };
 

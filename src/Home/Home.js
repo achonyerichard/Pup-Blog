@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Bloglist from "../Bloglist/Bloglist";
+import Footer from "../Footer/footer";
 import Layout from "../Layout";
 
 const Home = ({ blogData }) => {
@@ -17,18 +18,21 @@ const Home = ({ blogData }) => {
 
   console.log(filteredBlogs);
   return (
-    <Layout>
-      <div className="box">
-        <input
-          className="search_box"
-          type="search"
-          placeholder="Search Breed..."
-          value={searchDog}
-          onChange={(event) => onSearchChange(event)}
-        />
-      </div>
-      <Bloglist blogs={filteredBlogs} />
-    </Layout>
+    <>
+      <Layout>
+        <div className="box">
+          <input
+            className="search_box"
+            type="search"
+            placeholder="Search Breed..."
+            value={searchDog}
+            onChange={(event) => onSearchChange(event)}
+          />
+        </div>
+        <Bloglist blogs={filteredBlogs} />
+      </Layout>
+      <Footer />
+    </>
   );
 };
 

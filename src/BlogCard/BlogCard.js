@@ -16,6 +16,7 @@ import { useState } from 'react';
 
 
 
+
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
@@ -67,13 +68,14 @@ const BlogCard = (props) => {
     setLike(!like);
     console.log("why");
   };
-
+ 
   console.log(props);
 
   const classes = useStyles();
+  
 
   return (
-    <Container key={id}>
+    <Container  key={id}>
       <Card className={classes.root}>
         <CardHeader
           avatar={
@@ -83,6 +85,7 @@ const BlogCard = (props) => {
           }
           value="bold"
           title={name}
+          
         />
         <CardMedia className={classes.media} image={link} title="Paella dish" />
         <Badge

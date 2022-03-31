@@ -5,7 +5,7 @@ import Home from "./Home/Home";
 import Blog from "./Blog/Blog";
 import blogs from "./Data.js";
 import Landing from "./Landing-Page/Landing";
-
+import Dogs from "./Dogs/Dogs";
 
 const theme = createTheme({
   palette: {
@@ -31,6 +31,7 @@ function App() {
             path="/blog"
             element={<Blog blogData={blogData} setBlogData={setBlogData} />}
           />
+          <Route path="/dogs/:id" element={<Dogs blogsData={blogData} />} />
         </Routes>
       </Router>
     </ThemeProvider>

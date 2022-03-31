@@ -7,7 +7,7 @@ const Blogs = [
         about:'Doggo ipsum such treat boofers you are doing me the shock wow very biscit porgo heckin good boys and girls heck yapper doing me a frighten, yapper length boy most angery pupper .'
     },
     {
-        id :2,
+        id :2, 
         name:'Eren',
         breed:'Bulldog',
         link:'https://images.pexels.com/photos/3978352/pexels-photo-3978352.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
