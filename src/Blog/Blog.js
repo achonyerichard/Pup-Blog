@@ -16,7 +16,7 @@ const useStyles = makeStyles({
   text: {
     marginTop: "2rem",
     margin: "auto",
-    alignItems: "center",
+    alignItems: "cgenter",
     textAlign: "center",
     color: "white",
   },

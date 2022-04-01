@@ -8,7 +8,7 @@ import { Grid } from "@material-ui/core";
 const Dogs = ({ blogsData }) => {
   const { id } = useParams();
   console.log(blogsData);
-  const singleData = blogsData.filter((blog) => blog.id == id);
+  const singleData = blogsData.filter((blog) => blog.id === id);
   console.log(singleData);
   return (
     <Layout>
